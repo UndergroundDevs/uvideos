@@ -5,22 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5049c4d1-c93c-41c6-8542-9937627f447f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/core/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/core/serializers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/core/serializers/upload_video_serializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/models/video.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/core/models/video.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/serializers/upload_video_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/core/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/core/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/video/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/core/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/video/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/core/models/video.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/core/serializers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/core/serializers/upload_video_serializer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +39,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -62,6 +65,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/video" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/backend/core" />
       <recent name="$PROJECT_DIR$/backend/backend" />
     </key>
@@ -93,7 +98,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11" />
+        <option value="bundled-python-sdk-d68999036c7f-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.14475.56" />
       </set>
     </attachedChunks>
   </component>
@@ -110,5 +115,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/backend/urls.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
