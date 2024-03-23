@@ -16,8 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from video.views import VideoView
+from video.views import VideoListView, VideoDetailView
 
 urlpatterns = [
-    path('video/', VideoView.as_view())
+    path('video/', VideoListView.as_view()),
+    path('video/<str:pk>/', VideoDetailView.as_view()),
 ]
