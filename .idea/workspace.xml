@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5049c4d1-c93c-41c6-8542-9937627f447f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwm/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/dwm/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwm/media/temp/audio/0e203cc3-d86c-4cc7-989c-b58157109858-audio.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwm/media/temp/audio/28c228b5-30ed-4881-a277-8b66127bce77-audio.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwm/media/temp/audio/61426bd1-a407-4124-9d84-5d589df40269-audio.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwm/media/temp/audio/c4582919-135d-42fe-99ea-8115d208873c-audio.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwm/video.py" beforeDir="false" afterPath="$PROJECT_DIR$/dwm/video.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/video/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/video/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/video/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/video/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="5049c4d1-c93c-41c6-8542-9937627f447f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
