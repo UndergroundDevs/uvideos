@@ -10,7 +10,8 @@ class Video:
     path: str
     __temp_audio_file_path: str
     __temp_video_file_path: str
-    __temp_image_segments_of_a_video_path: str = os_path.join("media", "temp", "segments_of_a_video")
+    __temp_image_segments_of_a_video_path: str = os_path.join(os_path.dirname(os_path.abspath(__file__)), "media",
+                                                              "temp", "segments_of_a_video")
 
     def __init__(self, path):
         self.path = path
@@ -19,7 +20,8 @@ class Video:
         return os_path.join(self.__temp_image_segments_of_a_video_path, f"segment-{index}.png")
 
     def divide_into_segments(self) -> None:
-        self.__temp_audio_file_path = os_path.join("media", "temp", "audio", f"{uuid4()}-audio.mp3")
+        self.__temp_audio_file_path = os_path.join(os_path.dirname(os_path.abspath(__file__)), "media", "temp", "audio",
+                                                   f"{uuid4()}-audio.mp3")
         call(["ffmpeg", "-i", self.path, "-q:a", "0", "-map",
               "a", self.__temp_audio_file_path, "-y"],
              stdout=open(devnull, "w"), stderr=STDOUT)
@@ -38,14 +40,13 @@ class Video:
         video.release()
 
     def unify_segments(self, output_path: str) -> None:
-        self.__temp_video_file_path = os_path.join("media", "temp", "video", f"{uuid4()}.mov")
+        self.__temp_video_file_path = os_path.join(os_path.dirname(os_path.abspath(__file__)), "media", "temp", "video",
+                                                   f"{uuid4()}.mov")
         call(["ffmpeg", "-i", os_path.join(self.__temp_image_segments_of_a_video_path, "segment-%d.png"),
               "-vcodec", "png", self.__temp_video_file_path, "-y"], stdout=open(devnull, "w"),
              stderr=STDOUT)
         call(["ffmpeg", "-i", self.__temp_video_file_path, "-i", self.__temp_audio_file_path, "-codec", "copy",
-              "data/enc-" + os_path.join(output_path, f"teste.mov"), "-y"], stdout=open(devnull, "w"),
-             stderr=STDOUT)
-        call(["ffmpeg", "-i", self.__temp_video_file_path, "-i", self.__temp_audio_file_path, "-codec", "copy", os_path.join(output_path, "video.mov"), "-y"],
+              output_path, "-y"],
              stdout=open(devnull, "w"), stderr=STDOUT)
 
     def clean_temp(self) -> None:
@@ -58,5 +59,6 @@ class Video:
         image_files = listdir(self.__temp_image_segments_of_a_video_path)
         for file in image_files:
             file_path = os_path.join(self.__temp_image_segments_of_a_video_path, file)
+            print(file_path, " --- ", os_path.isfile(file_path))
             if os_path.isfile(file_path):
                 remove_file(file_path)

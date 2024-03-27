@@ -4,6 +4,7 @@ import uuid
 
 class Video(models.Model):
     id = models.CharField(primary_key=True, max_length=36, default=uuid.uuid4)
+    digital_watermarking_id = models.CharField(max_length=36, null=False, blank=False)
     title = models.CharField(max_length=36, null=False, blank=False)
     path = models.CharField(max_length=36, null=False, blank=False)
     digital_watermarking = models.BooleanField(default=False,  blank=True, null=False)

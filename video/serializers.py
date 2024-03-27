@@ -18,6 +18,10 @@ class VideoSerializer(serializers.Serializer):
     file = serializers.FileField(required=True, validators=[validate_file_extension])
 
 
+class VideoValidateSerializer(serializers.Serializer):
+    file = serializers.FileField(required=True, validators=[validate_file_extension])
+
+
 class VideoListSerializer(serializers.Serializer):
     id = serializers.CharField(max_length=36)
     title = serializers.CharField(max_length=36)
